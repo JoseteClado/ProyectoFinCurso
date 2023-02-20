@@ -329,6 +329,7 @@ template {
 /* ICONOS NAV MOVIL */
 /* INPUTS MOVIL */
 /* FOOTER MOVIL */
+/* Categorias Musicales Movil */
 /* ********* */
 /* @MIXINS */
 /* ********* */
@@ -339,6 +340,21 @@ template {
   font-family: "Lustria";
   src: url("../../../public/assets/font/Lustria.woff2") format("woff2"), url("../../../public/assets/font/Lustria.woff") format("woff"), url("../../../public/assets/font/Lustria.ttf") format("truetype");
 }
+h1 {
+  font-family: "Lustria", serif;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "Lustria", serif;
+  font-size: 22px;
+}
+
+h3 {
+  font-family: "Lustria", serif;
+  font-size: 18px;
+}
+
 /* ********* */
 /* @BUTTONS */
 /* ********* */
@@ -364,8 +380,117 @@ template {
 /* @SIDEBAR */
 /* ********* */
 /* ********* */
-/* @HOME */
+/* @INDEX */
 /* ********* */
+.containerIndex {
+  background-color: #6D83F3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 5%;
+}
+
+.headerIndex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 15%;
+  padding-bottom: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #EFF0F9;
+}
+
+.logoIndex {
+  height: 60px;
+  width: 60px;
+}
+
+.categorias {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5% 5% 5% 8%;
+  background-color: #EFF0F9;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 130px 30px 130px;
+  grid-template-columns: 130px 130px;
+  -ms-grid-rows: 90px 30px 90px 30px 90px 30px 90px 30px 90px 30px 90px;
+  grid-template-rows: 90px 90px 90px 90px 90px 90px;
+  grid-gap: 30px;
+}
+
+.categorias > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.categorias > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.categorias > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.categorias > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.categorias > *:nth-child(5) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.categorias > *:nth-child(6) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.categorias > *:nth-child(7) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+
+.categorias > *:nth-child(8) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+
+.categorias > *:nth-child(9) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+}
+
+.categorias > *:nth-child(10) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+}
+
+.categorias > *:nth-child(11) {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+}
+
+.categorias > *:nth-child(12) {
+  -ms-grid-row: 11;
+  -ms-grid-column: 3;
+}
+
+.categoriaMusical {
+  height: 90px;
+  width: 130px;
+  background-color: red;
+}
+
 /* ********* */
 /* @PORTADA */
 /* ********* */
@@ -393,15 +518,6 @@ template {
 .logo {
   width: 80px;
   height: 80px;
-}
-
-.tituloPortada {
-  font-family: "Lustria", serif;
-}
-
-.esloganPortada {
-  font-family: "Lustria", serif;
-  font-style: none;
 }
 
 .botonPortada {
