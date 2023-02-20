@@ -1,3 +1,13 @@
 /* ********* */
 /* @TYPOGRAPHY */
 /* ********* */
+
+
+
+
+@font-face {
+    font-family: 'Lustria';
+    src: url('../../../public/assets/font/Lustria.woff2') format('woff2'),
+         url('../../../public/assets/font/Lustria.woff') format('woff'),
+         url('../../../public/assets/font/Lustria.ttf')  format('truetype');
+  }

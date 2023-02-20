@@ -8,6 +8,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Lustria&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -322,6 +323,7 @@ template {
 /* ********* */
 /* COLORES */
 /* TEXTO */
+/* TIPOGRAFIAS */
 /* LOGO MOVIL */
 /* BOTON MOVIL */
 /* ICONOS NAV MOVIL */
@@ -333,36 +335,16 @@ template {
 /* ********* */
 /* @TYPOGRAPHY */
 /* ********* */
+@font-face {
+  font-family: "Lustria";
+  src: url("../../../public/assets/font/Lustria.woff2") format("woff2"), url("../../../public/assets/font/Lustria.woff") format("woff"), url("../../../public/assets/font/Lustria.ttf") format("truetype");
+}
 /* ********* */
 /* @BUTTONS */
 /* ********* */
 /* ********* */
 /* @BANNER */
 /* ********* */
-.containerPortada {
-  height: 100vh;
-  background-color: blue;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-}
-
 /* ********* */
 /* @HEADER */
 /* ********* */
@@ -385,8 +367,76 @@ template {
 /* @HOME */
 /* ********* */
 /* ********* */
-/* @CONTACT */
+/* @PORTADA */
 /* ********* */
+.containerPortada {
+  height: 100vh;
+  background-color: #6D83F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  padding: 20% 0 30% 0;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.tituloPortada {
+  font-family: "Lustria", serif;
+}
+
+.esloganPortada {
+  font-family: "Lustria", serif;
+  font-style: none;
+}
+
+.botonPortada {
+  height: 60px;
+  width: 155px;
+  border-radius: 1.875rem;
+  background-color: #392BF5;
+  color: white;
+  border-style: none;
+  font-size: 22px;
+  font-family: "Lustria", serif;
+}
+
+.navbar {
+  width: 80%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  height: 65px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 50px;
+  background-color: #392BF5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
 /* ********* */
 /* @THEMEDARK */
 /* ********* */

@@ -1,0 +1,60 @@
+/* ********* */
+/* @PORTADA */
+/* ********* */
+
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
+
+.containerPortada{
+    height: 100vh;
+    background-color: $color_fondo;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    padding: 20% 0 30% 0;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+.tituloPortada{
+
+    font-family: $fuenteTexto;
+    
+}
+
+.esloganPortada{
+    font-family: $fuenteTexto;
+    font-style: none;
+}
+
+.botonPortada{
+    height: $boton_movil_height;
+    width: $boton_movil_width;
+    border-radius: $boton_movil_borderRadius;
+    background-color: $color_secundario;
+    color: white;
+    border-style: none;
+    font-size: $tamano_movil_h2;
+    font-family: $fuenteTexto;
+}
+
+.navbar{
+    width: 80%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 65px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    background-color: $color_secundario;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
