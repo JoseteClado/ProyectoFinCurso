@@ -343,16 +343,19 @@ template {
 h1 {
   font-family: "Lustria", serif;
   font-size: 30px;
+  color: #EFF0F9;
 }
 
 h3 {
   font-family: "Lustria", serif;
   font-size: 22px;
+  color: #EFF0F9;
 }
 
 h3 {
   font-family: "Lustria", serif;
   font-size: 18px;
+  color: #EFF0F9;
 }
 
 /* ********* */
@@ -387,6 +390,7 @@ h3 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 5%;
+  text-align: center;
 }
 
 .headerIndex {
