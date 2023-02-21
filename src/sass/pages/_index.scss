@@ -28,16 +28,39 @@
 .categorias{
     width: 100%;
     box-sizing: border-box;
-    padding: 5% 5% 5% 8%;
+    padding: 8%;
     background-color: $color_texto;
     display: grid;
-    grid-template-columns: 130px 130px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 90px 90px 90px 90px 90px 90px;
     grid-gap: 30px;
 }
 
 .categoriaMusical{
-    height: 90px;
-    width: 130px;
+    height: 100%;
+    width: 100%;
     background-color: red;
+}
+
+.gustosMusicales{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tarjetaGustos{
+    background-color: white;
+    padding: 20px 23px 5px 24px;
+}
+
+.imagenGustos{
+    height: 210px;
+    width: 200px;
+    background-image: url("../assets/img/smartphone/GustosMusicales_movil.webp");
+}
+
+.reproductor{
+    height: 73px;
+    width: 247px;
+    background-image: url("../assets/img/smartphone/Reproductor_Movil.webp");
 }
