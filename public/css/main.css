@@ -346,10 +346,11 @@ h1 {
   color: #EFF0F9;
 }
 
-h3 {
+h2 {
   font-family: "Lustria", serif;
   font-size: 22px;
   color: #EFF0F9;
+  margin-bottom: 45px;
 }
 
 h3 {
@@ -393,6 +394,7 @@ h3 {
   text-align: center;
 }
 
+/* HEADER INDEX */
 .headerIndex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,6 +416,7 @@ h3 {
   width: 60px;
 }
 
+/* SECCION CATEGORIAS MUSICALES */
 .categorias {
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -428,62 +431,50 @@ h3 {
   grid-template-rows: 90px 90px 90px 90px 90px 90px;
   grid-gap: 30px;
 }
-
 .categorias > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
-
 .categorias > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
-
 .categorias > *:nth-child(3) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
-
 .categorias > *:nth-child(4) {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
 }
-
 .categorias > *:nth-child(5) {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
 }
-
 .categorias > *:nth-child(6) {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
 }
-
 .categorias > *:nth-child(7) {
   -ms-grid-row: 7;
   -ms-grid-column: 1;
 }
-
 .categorias > *:nth-child(8) {
   -ms-grid-row: 7;
   -ms-grid-column: 3;
 }
-
 .categorias > *:nth-child(9) {
   -ms-grid-row: 9;
   -ms-grid-column: 1;
 }
-
 .categorias > *:nth-child(10) {
   -ms-grid-row: 9;
   -ms-grid-column: 3;
 }
-
 .categorias > *:nth-child(11) {
   -ms-grid-row: 11;
   -ms-grid-column: 1;
 }
-
 .categorias > *:nth-child(12) {
   -ms-grid-row: 11;
   -ms-grid-column: 3;
@@ -495,7 +486,10 @@ h3 {
   background-color: red;
 }
 
+/* SECCION GUSTOS MUSICALES */
 .gustosMusicales {
+  margin-top: 15px;
+  padding: 35px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,6 +500,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #6E87FD;
 }
 
 .tarjetaGustos {
@@ -523,6 +518,14 @@ h3 {
   height: 73px;
   width: 247px;
   background-image: url("../assets/img/smartphone/Reproductor_Movil.webp");
+}
+
+.textoGustos {
+  margin-top: 30px;
+  color: #EFF0F9;
+  font-size: 16px;
+  font-family: "lustria";
+  text-align: justify;
 }
 
 /* ********* */
