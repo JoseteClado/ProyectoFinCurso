@@ -359,6 +359,10 @@ h3 {
   color: #EFF0F9;
 }
 
+.letrasFooter {
+  color: #6D83F3;
+}
+
 /* ********* */
 /* @BUTTONS */
 /* ********* */
@@ -394,6 +398,10 @@ h3 {
   text-align: center;
 }
 
+body {
+  background-color: #6D83F3;
+}
+
 /* HEADER INDEX */
 .headerIndex {
   display: -webkit-box;
@@ -401,7 +409,7 @@ h3 {
   display: flex;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 15%;
+  padding: 30px 15%;
   padding-bottom: 10px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -483,7 +491,56 @@ h3 {
 .categoriaMusical {
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.categoriaMusical1 {
+  background-image: url("../assets/img/smartphone/Blues_Movil.webp");
+}
+
+.categoriaMusical2 {
+  background-image: url("../assets/img/smartphone/Clasica_movil.webp");
+}
+
+.categoriaMusical3 {
+  background-image: url("../assets/img/smartphone/Electronica_movil.webp");
+}
+
+.categoriaMusical4 {
+  background-image: url("../assets/img/smartphone/Flamenco_Movil.webp");
+}
+
+.categoriaMusical5 {
+  background-image: url("../assets/img/smartphone/Jazz_Movil.webp");
+}
+
+.categoriaMusical6 {
+  background-image: url("../assets/img/smartphone/Metal_Movil.webp");
+}
+
+.categoriaMusical7 {
+  background-image: url("../assets/img/smartphone/Pop_Movil.webp");
+}
+
+.categoriaMusical8 {
+  background-image: url("../assets/img/smartphone/Rap_Movil.webp");
+}
+
+.categoriaMusical9 {
+  background-image: url("../assets/img/smartphone/Reggaeton_movil.webp");
+}
+
+.categoriaMusical10 {
+  background-image: url("../assets/img/smartphone/Rock_Movil.webp");
+}
+
+.categoriaMusical11 {
+  background-image: url("../assets/img/smartphone/Soul_Movil.webp");
+}
+
+.categoriaMusical12 {
+  background-image: url("../assets/img/smartphone/Country_Movil.webp");
 }
 
 /* SECCION GUSTOS MUSICALES */
@@ -520,12 +577,108 @@ h3 {
   background-image: url("../assets/img/smartphone/Reproductor_Movil.webp");
 }
 
+.shadowTarjetaGustos {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .textoGustos {
   margin-top: 30px;
   color: #EFF0F9;
   font-size: 16px;
   font-family: "lustria";
   text-align: justify;
+}
+
+/* SECCION ARTISTAS DESTACADOS */
+.artistas {
+  background-color: #392BF5;
+  width: 100%;
+  padding-top: 20px;
+  margin-bottom: 20px 0;
+}
+
+.sliderArtistas {
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  -ms-scroll-snap-type: x proximity;
+      scroll-snap-type: x proximity;
+}
+
+.tarjetaArtista {
+  background-color: #392BF5;
+  width: 115px;
+  height: 220px;
+  position: relative;
+  scroll-snap-align: center;
+  margin-left: 40%;
+}
+
+.tarjetaArtistaFinal {
+  margin-right: 40%;
+}
+
+.imagenArtista {
+  width: 115px;
+  height: 156px;
+}
+
+.imagenArtista1 {
+  background-image: url("../assets/img/smartphone/Artista.jpg");
+}
+
+.imagenArtista2 {
+  background-image: url("../assets/img/smartphone/Artista.jpg");
+}
+
+.imagenArtista3 {
+  background-image: url("../assets/img/smartphone/Artista.jpg");
+}
+
+.imagenArtista4 {
+  background-image: url("../assets/img/smartphone/Artista.jpg");
+}
+
+.imagenArtista5 {
+  background-image: url("../assets/img/smartphone/Artista.jpg");
+}
+
+.imagenArtista6 {
+  background-image: url("../assets/img/smartphone/Artista.jpg");
+}
+
+.textoArtista {
+  color: #EFF0F9;
+  font-family: "lustria";
+  margin-top: 20px;
+}
+
+/* FOOTER MOVIL */
+.footerIndex {
+  width: 100%;
+  background-color: #EFF0F9;
+  color: #6D83F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.lineaFooter {
+  height: 1.75px;
+  background-color: #6D83F3;
+  width: 60%;
 }
 
 /* ********* */
