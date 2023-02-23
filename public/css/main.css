@@ -400,6 +400,8 @@ h3 {
 
 body {
   background-color: #6D83F3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* HEADER INDEX */
@@ -793,6 +795,115 @@ body {
   bottom: 0;
   left: 10%;
   border: 1px solid black;
+}
+
+/* ********* */
+/* @REGISTRO */
+/* ********* */
+.containerRegistro {
+  background-color: #6D83F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20% 5%;
+  height: 100vh;
+  color: #EFF0F9;
+}
+
+input {
+  height: 60px;
+  width: 280px;
+  border-radius: 30px;
+  background-color: #D7D9EE;
+  border: none;
+  outline: none;
+  color: #6D83F3;
+  padding: 0 25px;
+  font-size: 18px;
+  font-family: "lustria";
+  width: 80%;
+}
+
+input::-webkit-input-placeholder {
+  color: #6D83F3;
+  font-size: 18px;
+  font-family: "lustria";
+}
+
+input::-moz-placeholder {
+  color: #6D83F3;
+  font-size: 18px;
+  font-family: "lustria";
+}
+
+input:-ms-input-placeholder {
+  color: #6D83F3;
+  font-size: 18px;
+  font-family: "lustria";
+}
+
+input::-ms-input-placeholder {
+  color: #6D83F3;
+  font-size: 18px;
+  font-family: "lustria";
+}
+
+input::placeholder {
+  color: #6D83F3;
+  font-size: 18px;
+  font-family: "lustria";
+}
+
+.inputsRegistro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.inputMini {
+  width: 45%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.botonRegistro {
+  height: 60px;
+  width: 170px;
+  background-color: #392BF5;
+  border-radius: 30px;
+  color: #EFF0F9;
+  border: none;
+  font-family: "lustria";
+}
+
+.containerRegistro > a {
+  color: #EFF0F9;
+  font-family: "lustria";
+}
+
+.containerRegistro > p {
+  color: #EFF0F9;
+  font-family: "lustria";
+}
+
+.containerRegistro > p > a {
+  color: #EFF0F9;
+  font-family: "lustria";
 }
 
 /* ********* */
