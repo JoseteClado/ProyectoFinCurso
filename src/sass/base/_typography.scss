@@ -40,3 +40,13 @@
 .logoCancion > h1{
   color: $color_secundario;
 }
+
+.navbarEscritorio > p{
+  color: $color_texto;
+  font-family: "lustria";
+}
+
+.logoNavbarEscritorio > p{
+  color: $color_texto;
+  font-size: 20px;
+}
