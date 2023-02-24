@@ -1,0 +1,42 @@
+/* ********* */
+/* @CANCION */
+/* ********* */
+
+.containerCancion{
+    padding: 5%;
+}
+
+.tarjetaCancion{
+    background-color: $color_texto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.logoCancion{
+    display: flex;
+    justify-content: space-around;
+    width: 68%;
+}
+
+.imgCancionRecomendada{
+    background-image: url(../assets/img/smartphone/imagenCancionrecomendada.webp);
+    height: 242px;
+    width: 237px;
+}
+
+.tarjetaCancion{
+    color: $color_secundario;
+}
+
+.botonCancion{
+    border: none;
+    border-radius: 30px;
+    background-color: $color_secundario;
+    color: $color_texto;
+    height: 60px;
+    width: 200px;
+    font-size: 16px;
+    font-family: "lustria";
+}
