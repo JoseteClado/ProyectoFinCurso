@@ -360,7 +360,7 @@ h3 {
 }
 
 .letrasFooter {
-  color: #6D83F3;
+  color: #6E87FD;
 }
 
 .textoCancionrecomendada > h2 {
@@ -379,6 +379,10 @@ h3 {
 .logoNavbarEscritorio > p {
   color: #EFF0F9;
   font-size: 20px;
+}
+
+.letrasCategorias > h2 {
+  color: #6E87FD;
 }
 
 /* ********* */
@@ -409,7 +413,7 @@ h3 {
 /* @INDEX */
 /* ********* */
 .containerIndex {
-  background-color: #6D83F3;
+  background-color: #6E87FD;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 5%;
@@ -417,7 +421,7 @@ h3 {
 }
 
 body {
-  background-color: #6D83F3;
+  background-color: #6E87FD;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -443,11 +447,12 @@ body {
 .headerEscritorio {
   display: none;
   height: 100vh;
+  text-align: center;
 }
 
 .navbarEscritorio {
   width: 100%;
-  background-color: #6D83F3;
+  background-color: #6E87FD;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,14 +487,22 @@ body {
   height: 53px;
 }
 
+.botonHeaderMovil {
+  width: 210px;
+  height: 61px;
+  color: #6E87FD;
+  border-radius: 30px;
+  border: none;
+  margin-top: 60px;
+}
+
 /* BANNER ESCRITORIO */
 .bannerEscritorio {
-  height: 50%;
-  width: 100%;
+  height: 500px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
 }
 
 .textoBanner {
@@ -511,10 +524,8 @@ body {
 }
 
 .imgBanner {
-  width: 100%;
-  height: 100%;
-  background-image: url("../assets/img/desktop/");
-  background-position: right;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* ************** */
@@ -603,6 +614,10 @@ body {
           justify-content: center;
   font-family: "Lustria";
   color: white;
+}
+
+.letrasCategorias {
+  display: none;
 }
 
 .categoriaMusical1 {
@@ -712,6 +727,10 @@ body {
   text-align: justify;
 }
 
+.gustosEscritorio {
+  display: none;
+}
+
 /* SECCION ARTISTAS DESTACADOS */
 .artistas {
   background-color: #392BF5;
@@ -783,7 +802,7 @@ body {
 .footerIndex {
   width: 100%;
   background-color: #EFF0F9;
-  color: #6D83F3;
+  color: #6E87FD;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,7 +832,7 @@ body {
 
 .lineaFooter {
   height: 1.75px;
-  background-color: #6D83F3;
+  background-color: #6E87FD;
   width: 60%;
 }
 
@@ -837,7 +856,207 @@ body {
     display: block;
   }
   .containerIndex {
-    padding: 0;
+    padding: 5%;
+  }
+  .categorias {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5%;
+    background-color: #EFF0F9;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 30px 30px 220px 30px 220px 30px 220px;
+    grid-template-rows: 30px 220px 220px 220px;
+    grid-gap: 30px;
+  }
+  .categorias > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .categorias > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .categorias > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  .categorias > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+  }
+  .categorias > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .categorias > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .categorias > *:nth-child(7) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+  }
+  .categorias > *:nth-child(8) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 7;
+  }
+  .categorias > *:nth-child(9) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .categorias > *:nth-child(10) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+  .categorias > *:nth-child(11) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+  }
+  .categorias > *:nth-child(12) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 7;
+  }
+  .categorias > *:nth-child(13) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .categorias > *:nth-child(14) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+  }
+  .categorias > *:nth-child(15) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 5;
+  }
+  .categorias > *:nth-child(16) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 7;
+  }
+  .letrasCategorias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .categoriaMusical1 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/desktop/blues.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/blues.webp");
+  }
+  .categoriaMusical2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/desktop/clasica.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/clasica.webp");
+  }
+  .categoriaMusical3 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/desktop/electronica.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/electronica.webp");
+  }
+  .categoriaMusical4 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/desktop/flamenco.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/flamenco.webp");
+  }
+  .categoriaMusical5 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/desktop/jazz.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/jazz.webp");
+  }
+  .categoriaMusical6 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/desktop/metal.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/metal.webp");
+  }
+  .categoriaMusical7 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/desktop/pop.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/pop.webp");
+  }
+  .categoriaMusical8 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/desktop/rap.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/rap.webp");
+  }
+  .categoriaMusical9 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/desktop/reggaeton.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/reggaeton.webp");
+  }
+  .categoriaMusical10 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/desktop/rock.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/rock.webp");
+  }
+  .categoriaMusical11 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/desktop/soul.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/soul.webp");
+  }
+  .categoriaMusical12 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/img/desktop/blues.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/blues.webp");
+  }
+  .gustosMusicales {
+    margin: 100px 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 10%;
+  }
+  .textoGustos {
+    margin-top: 30px;
+    width: 60%;
+    font-size: 22px;
+  }
+  .tarjetaGustos {
+    background-color: white;
+    padding: 30px 0px 20px 30px;
+  }
+  .imagenGustos {
+    height: 290px;
+    width: 290px;
+    background-image: url("../assets/img/desktop/gustosMusicales.webp");
+    background-size: cover;
+  }
+  .reproductor {
+    height: 102px;
+    width: 353px;
+    background-image: url("../assets/img/desktop/ReproductorGustos.webp");
+  }
+  .gustosMovil {
+    display: none;
+  }
+  .gustosEscritorio {
+    display: block;
+  }
+  .flexGustosTexto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /* ********* */
@@ -845,7 +1064,7 @@ body {
 /* ********* */
 .containerPortada {
   height: 100vh;
-  background-color: #6D83F3;
+  background-color: #6E87FD;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -909,7 +1128,7 @@ body {
 /* @REGISTRO */
 /* ********* */
 .containerRegistro {
-  background-color: #6D83F3;
+  background-color: #6E87FD;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -936,7 +1155,7 @@ input {
   background-color: #D7D9EE;
   border: none;
   outline: none;
-  color: #6D83F3;
+  color: #6E87FD;
   padding: 0 25px;
   font-size: 18px;
   font-family: "lustria";
@@ -944,31 +1163,31 @@ input {
 }
 
 input::-webkit-input-placeholder {
-  color: #6D83F3;
+  color: #6E87FD;
   font-size: 18px;
   font-family: "lustria";
 }
 
 input::-moz-placeholder {
-  color: #6D83F3;
+  color: #6E87FD;
   font-size: 18px;
   font-family: "lustria";
 }
 
 input:-ms-input-placeholder {
-  color: #6D83F3;
+  color: #6E87FD;
   font-size: 18px;
   font-family: "lustria";
 }
 
 input::-ms-input-placeholder {
-  color: #6D83F3;
+  color: #6E87FD;
   font-size: 18px;
   font-family: "lustria";
 }
 
 input::placeholder {
-  color: #6D83F3;
+  color: #6E87FD;
   font-size: 18px;
   font-family: "lustria";
 }
