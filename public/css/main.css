@@ -336,10 +336,6 @@ template {
 /* ********* */
 /* @TYPOGRAPHY */
 /* ********* */
-@font-face {
-  font-family: "Lustria";
-  src: url("../../../public/assets/font/Lustria.woff2") format("woff2"), url("../../../public/assets/font/Lustria.woff") format("woff"), url("../../../public/assets/font/Lustria.ttf") format("truetype");
-}
 h1 {
   font-family: "Lustria", serif;
   font-size: 30px;
@@ -412,6 +408,11 @@ h3 {
 /* ********* */
 /* @INDEX */
 /* ********* */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
 .containerIndex {
   background-color: #6E87FD;
   -webkit-box-sizing: border-box;
@@ -424,6 +425,9 @@ body {
   background-color: #6E87FD;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 1366px;
+  margin: 0 auto;
+  height: 100%;
 }
 
 /* HEADER INDEX */
@@ -487,13 +491,28 @@ body {
   height: 53px;
 }
 
+.logoPortada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iconoPortada {
+  width: 70px;
+  margin-right: 10px;
+}
+
 .botonHeaderMovil {
   width: 210px;
   height: 61px;
   color: #6E87FD;
   border-radius: 30px;
   border: none;
-  margin-top: 60px;
+  margin-top: 160px;
+  cursor: pointer;
 }
 
 /* BANNER ESCRITORIO */
@@ -871,6 +890,7 @@ body {
     -ms-grid-rows: 30px 30px 220px 30px 220px 30px 220px;
     grid-template-rows: 30px 220px 220px 220px;
     grid-gap: 30px;
+    border: 3px solid #6E87FD;
   }
   .categorias > *:nth-child(1) {
     -ms-grid-row: 1;
@@ -1057,6 +1077,18 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .tarjetaArtista {
+    margin-left: 18.5%;
+  }
+  .tarjetaArtistaFinal {
+    margin-right: 18.5%;
+  }
+  .rodeaCategorias {
+    background-color: #EFF0F9;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5%;
   }
 }
 /* ********* */

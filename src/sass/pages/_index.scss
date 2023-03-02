@@ -2,16 +2,25 @@
 /* @INDEX */
 /* ********* */
 
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
 .containerIndex{
     background-color: $color_fondo;
     box-sizing: border-box;
     padding: 0 5%;
     text-align: center;
+    
 }
 
 body{
     background-color: $color_fondo;
     box-sizing: border-box;
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 100%;
 }
 
     /* HEADER INDEX */
@@ -44,6 +53,8 @@ body{
     padding: 0 6%;
 }
 
+
+
 .logoNavbarEscritorio{
     display: flex;
     align-items: center;
@@ -56,13 +67,24 @@ body{
     height: 53px;
 }
 
+.logoPortada{
+    display: flex;
+    align-items: center;
+}
+
+.iconoPortada{
+    width: 70px;
+    margin-right: 10px;
+}
+
 .botonHeaderMovil{
     width: 210px;
     height: 61px;
     color: $color_fondo;
     border-radius: 30px;
     border: none;
-    margin-top: 60px;
+    margin-top: 160px;
+    cursor: pointer;
 
 }
 
@@ -335,6 +357,7 @@ body{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows:  30px 220px 220px 220px; 
         grid-gap: 30px;
+        border: 3px solid $color_fondo;
     }
 
     .letrasCategorias{
@@ -443,5 +466,20 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.tarjetaArtista{
+    margin-left: 18.5%;
+}
+
+.tarjetaArtistaFinal{
+    margin-right: 18.5%;
+}
+
+.rodeaCategorias{
+    background-color: $color_texto;
+    box-sizing: border-box;
+    padding: 5%;
+}
+
 
 }
