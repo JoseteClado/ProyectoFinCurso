@@ -2,23 +2,117 @@
 /* @INDEX */
 /* ********* */
 
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
 .containerIndex{
     background-color: $color_fondo;
     box-sizing: border-box;
     padding: 0 5%;
     text-align: center;
+    
+}
+
+body{
+    background-color: $color_fondo;
+    box-sizing: border-box;
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 100%;
 }
 
     /* HEADER INDEX */
-.headerIndex{
+.headerMovil{
     display: flex;
     box-sizing: border-box;
-    padding: 0 15%;
+    padding: 30px 15%;
     padding-bottom: 10px;
     justify-content: space-around;
     align-items: center;
     color: $color_texto;
 }
+
+/* HEADER ESCRITORIO */
+.headerEscritorio{
+    display: none;
+    height: 100vh;
+    text-align: center;
+}
+
+.navbarEscritorio{
+    width: 100%;
+    background-color: $color_fondo;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    height: 53px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 6%;
+}
+
+
+
+.logoNavbarEscritorio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12%;
+}
+
+.logoNavbar{
+    width: 46px;
+    height: 53px;
+}
+
+.logoPortada{
+    display: flex;
+    align-items: center;
+}
+
+.iconoPortada{
+    width: 70px;
+    margin-right: 10px;
+}
+
+.botonHeaderMovil{
+    width: 210px;
+    height: 61px;
+    color: $color_fondo;
+    border-radius: 30px;
+    border: none;
+    margin-top: 160px;
+    cursor: pointer;
+
+}
+
+/* BANNER ESCRITORIO */
+.bannerEscritorio{
+ height: 500px;
+ display: grid;
+ grid-template-columns: 1fr auto;
+ 
+}
+
+.textoBanner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.imgBanner{
+    
+    object-fit: cover;
+}
+
+/* ************** */
 
 .logoIndex{
     height: 60px;
@@ -40,7 +134,67 @@
 .categoriaMusical{
     height: 100%;
     width: 100%;
-    background-color: red;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lustria";
+    color: white;
+}
+
+
+.letrasCategorias{
+    display: none;
+}
+
+.categoriaMusical1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/smartphone/Blues_Movil.webp");
+  
+}
+.categoriaMusical2{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/smartphone/Clasica_Movil.webp");
+}
+.categoriaMusical3{
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/smartphone/Electronica_movil.webp");
+}
+.categoriaMusical4{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/smartphone/Flamenco_Movil.webp");
+}
+.categoriaMusical5{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/smartphone/Jazz_Movil.webp");
+}
+.categoriaMusical6{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/smartphone/Metal_Movil.webp");
+}
+.categoriaMusical7{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/smartphone/Pop_Movil.webp");
+}
+.categoriaMusical8{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/smartphone/Rap_Movil.webp");
+}
+.categoriaMusical9{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/smartphone/Reggaeton_Movil.webp");
+}
+.categoriaMusical10{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/smartphone/Rock_Movil.webp");
+}
+.categoriaMusical11{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/smartphone/Soul_Movil.webp");
+}
+.categoriaMusical12{
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/smartphone/Country_Movil.webp");
 }
 
     /* SECCION GUSTOS MUSICALES */
@@ -70,10 +224,262 @@
     background-image: url("../assets/img/smartphone/Reproductor_Movil.webp");
 }
 
+.shadowTarjetaGustos{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .textoGustos{
     margin-top: 30px;
     color: $color_texto;
     font-size: 16px;
     font-family: "lustria";
     text-align: justify;
+}
+
+.gustosEscritorio{
+    display: none;
+}
+
+
+/* SECCION ARTISTAS DESTACADOS */
+
+.artistas{
+    background-color: $color_secundario;
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 20px 0;
+}
+
+ .sliderArtistas{
+    height: 230px;
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+} 
+
+.tarjetaArtista{
+    background-color: $color_secundario;
+    width: 115px;
+    height: 220px;
+    position: relative;
+    scroll-snap-align: center;
+    margin-left: 40%;   
+}
+.tarjetaArtistaFinal{
+    margin-right: 40%;
+}
+
+.imagenArtista{
+    width: 115px;
+    height: 156px;
+}
+
+
+.imagenArtista1{
+    background-image: url("../assets/img/smartphone/Artista.jpg");
+}
+.imagenArtista2{
+    background-image: url("../assets/img/smartphone/Artista.jpg");
+}
+.imagenArtista3{
+    background-image: url("../assets/img/smartphone/Artista.jpg");
+}
+.imagenArtista4{
+    background-image: url("../assets/img/smartphone/Artista.jpg");
+}
+.imagenArtista5{
+    background-image: url("../assets/img/smartphone/Artista.jpg");
+}
+.imagenArtista6{
+    background-image: url("../assets/img/smartphone/Artista.jpg");
+}
+
+.textoArtista{
+    color: $color_texto;
+    font-family: "lustria";
+    margin-top: 20px;
+}
+
+/* FOOTER MOVIL */
+
+.footerIndex{
+    width: 100%;
+    background-color: $color_texto;
+    color: $color_fondo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.iconosFooter{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.lineaFooter{
+    height: 1.75px;
+    background-color: $color_fondo;
+    width: 60%;
+}
+
+.telefonoFooter{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    align-items: center;
+}
+
+@media screen and (min-width: 1000px){
+
+    .headerMovil{
+        display: none;
+
+    }
+    .headerEscritorio{
+        display: block;
+    }
+
+    .containerIndex{
+        padding: 5%;
+    }
+
+    .categorias{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5%;
+        background-color: $color_texto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:  30px 220px 220px 220px; 
+        grid-gap: 30px;
+        border: 3px solid $color_fondo;
+    }
+
+    .letrasCategorias{
+        display: flex;
+        grid-column: 1/5;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .categoriaMusical1{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/blues.webp");
+      
+    }
+    .categoriaMusical2{
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/clasica.webp");
+    }
+    .categoriaMusical3{
+    
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/electronica.webp");
+    }
+    .categoriaMusical4{
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/flamenco.webp");
+    }
+    .categoriaMusical5{
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/jazz.webp");
+    }
+    .categoriaMusical6{
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/metal.webp");
+    }
+    .categoriaMusical7{
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/pop.webp");
+    }
+    .categoriaMusical8{
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/rap.webp");
+    }
+    .categoriaMusical9{
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/reggaeton.webp");
+    }
+    .categoriaMusical10{
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/rock.webp");
+    }
+    .categoriaMusical11{
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/soul.webp");
+    }
+    .categoriaMusical12{
+       
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/desktop/blues.webp");
+    }
+    
+.gustosMusicales{
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0 10%;
+}
+
+.textoGustos{
+    margin-top: 30px;
+    width: 60%;
+    font-size: 22px;
+}
+
+.tarjetaGustos{
+    background-color: white;
+    padding: 30px 0px 20px 30px;
+}
+
+
+.imagenGustos{
+    height: 290px;
+    width: 290px;
+    background-image: url("../assets/img/desktop/gustosMusicales.webp");
+    background-size: cover;
+}
+
+.reproductor{
+    height: 102px;
+    width: 353px;
+    background-image: url("../assets/img/desktop/ReproductorGustos.webp");
+}
+
+.gustosMovil{
+    display: none;
+}
+
+.gustosEscritorio{
+    display: block;
+}
+
+.flexGustosTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjetaArtista{
+    margin-left: 18.5%;
+}
+
+.tarjetaArtistaFinal{
+    margin-right: 18.5%;
+}
+
+.rodeaCategorias{
+    background-color: $color_texto;
+    box-sizing: border-box;
+    padding: 5%;
+}
+
+
 }
